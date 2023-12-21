@@ -1,0 +1,51 @@
+﻿@* @{
+    ViewData["Title"] = "Home Page";
+} *@
+
+@* <div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div> *@
+<script src="~/lib/signalr/signalr.js"></script>
+
+
+<div class="container wrap">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-success">
+                <div class="panel-heading" id="accordion">
+                    <span class="glyphicon glyphicon-comment"></span>
+                    <div class="btn-group pull-right">
+                        <a type="button" class="btn btn-default btn-xs" data-toggle="collapse">
+                            <span class="glyphicon glyphicon-chevron-down"></span>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="panel-collapse" id="collapseOne">
+                    <div class="panel-body">
+                        <ul id="messagesList" class="chat"></ul>
+                    </div>
+                    <div class="panel-footer">
+                        <div class="input-group">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <input type="text" id="userName" class="form-control inpput-sm" placeholder="Type Your Name"/>
+                                </div>
+                                <div class="col-sm-6">
+                                    <input type="text" id="userMessage" class="form-control input-sm" placeholder="Type your message here..."/>
+                                </div>
+                            </div>
+                            <span class="input-group-btn">
+                                <input type="button" value="Send" id="sendMessage" class="btn btn-danger btn-sm">
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
